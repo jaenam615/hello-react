@@ -4,7 +4,7 @@ function ShoppingList({items}){
     return (
       <ul>
         {items.map(i => (
-            <ShoppingListItem id = {i.id} item={i.item} quantity ={i.quantity} completed={i.completed}/>
+            <ShoppingListItem key= {i.id} {...i}/>
         ))}
       </ul>
     );
